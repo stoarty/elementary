@@ -20,9 +20,9 @@ public class Library {
         for (int i = 0; i < books.length; i++) {
             System.out.println(books[i].getName());
         }
-        for (int i = 0; i < books.length; i++) {
-            if (books[i].getName().equals("Clean code")) {
-                System.out.println(books[i].getName());
+        for (Book book : books) {
+            if ("Clean code".equals(book.getName())) {
+                System.out.println(book.getName());
             }
         }
     }
